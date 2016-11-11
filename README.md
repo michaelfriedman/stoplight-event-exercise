@@ -8,9 +8,9 @@ For this exercise, you will be creating a web page that looks like a stoplight w
 
 #### Challenge One: Group "Hover" Handler
 
-* Add a event listeners on each of your buttons that log `"Entered <textContent> button"` when a user mouses over a button.
+* Add a event listeners on each of your buttons that log `"Entered <textContent> button"` when a user mouses over a button. __
 
-* Add new event listeners on each of your buttons that log `"Left <textContent> button"` when a user mouses out.
+* Add new event listeners on each of your buttons that log `"Left <textContent> button"` when a user mouses out.__
 
 * Add a single event listener on all three buttons as a group. In your group event handler, log the `textContent` of each button when a user clicks the button.
 
