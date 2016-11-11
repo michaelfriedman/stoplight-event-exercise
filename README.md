@@ -12,7 +12,7 @@ For this exercise, you will be creating a web page that looks like a stoplight w
 
 * Add new event listeners on each of your buttons that log `"Left <textContent> button"` when a user mouses out.__
 
-* Add a single event listener on all three buttons as a group. In your group event handler, log the `textContent` of each button when a user clicks the button.
+* **Add a single event listener on all three buttons as a group. In your group event handler, log the `textContent` of each button when a user clicks the button.**
 
 #### Challenge Two: Button Toggle
 

@@ -26,6 +26,7 @@
   const slowLight = document.getElementById('slowLight')
   const goButton = document.getElementById('goButton')
   const goLight = document.getElementById('goLight')
+  const buttons = document.querySelectorAll('h1')
   let redCounter = 0
   let slowCounter = 0
   let goCounter = 0
@@ -33,7 +34,6 @@
     redCounter += 1
     if (redCounter % 2 === 1) {
       stopLight.style = 'background-color: red'
-      console.log(stopLight.style.backgroundColor)
       goLight.style = 'background-color: black'
       slowLight.style = 'background-color: black'
     } else {
@@ -46,9 +46,9 @@
       slowLight.style = 'background-color: orange'
       stopLight.style = 'background-color: black'
       goLight.style = 'background-color: black'
-  } else {
-    slowLight.style = 'background-color: black'
-  }
+    } else {
+      slowLight.style = 'background-color: black'
+    }
   })
   goButton.addEventListener('click', () => {
     goCounter += 1
@@ -81,4 +81,9 @@
   goButton.addEventListener('mouseout', () => {
     console.log(`Left go button.`)
   })
-    })()
+  for (const button of buttons) {
+    button.addEventListener('click', (e) => {
+      console.log(`You clicked ${button.textContent}`)
+    })
+  }
+})()
